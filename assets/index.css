@@ -9,3 +9,96 @@ body {
 }
 
 #root {}
+
+.todo-app {
+	width: 400px;
+	max-width: 92%;
+	margin: 20px auto 0px;
+	border: 4px solid rgb(160, 160, 160);
+	border-radius: 8px;
+}
+
+.todo-app-heading {
+	text-align: center;
+	font-size: 32px;
+}
+
+.form {
+	display: flex;
+	border-width: 2px 0px;
+	border-style: solid;
+	border-color: rgb(160, 160, 160);
+}
+
+.add-todo-form {}
+
+.form .form-input {
+	flex-grow: 1;
+	padding: 8px 12px;
+	border-width: 0px;
+	border-right: 2px solid rgb(160, 160, 160);
+}
+
+.form .form-input:focus {
+	outline: none;
+}
+
+.form .form-submit {
+	width: 126px;
+	padding: 8px 0px;
+	cursor: pointer;
+	border: none;
+}
+
+.form .form-submit:hover {
+	background-color: rgb(160, 160, 160);
+	outline: none;
+}
+
+.todo-list {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	border: none;
+}
+
+.todo-item {
+	display: flex;
+	align-items: center;
+	border-width: 0px;
+	border-top: 2px solid rgb(160, 160, 160);
+}
+
+.todo-item:first-child {
+	border-top: none;
+}
+
+.todo-item .todo-item-content {
+	flex-grow: 1;
+	padding: 8px 12px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow-x: hidden;
+}
+
+.todo-item input[type="text"].todo-item-content {
+	border: none;
+	outline: none;
+}
+
+.todo-item .todo-item-button {
+	width: 64px;
+	min-width: 64px;
+	cursor: pointer;
+	padding: 8px 0px;
+	border: none;
+	border-left: 2px solid rgb(160, 160, 160);
+}
+
+.todo-item .todo-item-button:last-child {
+	border-radius: 0px 0px 4px 0px;
+}
+
+.todo-item .todo-item-button:hover {
+	background-color: rgb(160, 160, 160);
+}
